@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SocialCell" id="gTV-IL-0wX" customClass="SocialCell" customModule="MyLibrary">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YoutubePerson" translatesAutoresizingMaskIntoConstraints="NO" id="3sQ-2A-Mm1">
+                        <rect key="frame" x="5" y="26" width="48" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="ci0-qA-ogt"/>
+                            <constraint firstAttribute="width" secondItem="3sQ-2A-Mm1" secondAttribute="height" id="vuM-wL-9yK"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                <real key="value" value="24"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mathew Micheli" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="nIl-lF-BwD">
+                        <rect key="frame" x="60.999999999999993" y="41.666666666666664" width="103.33333333333331" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YoutubeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="biN-07-9Nm">
+                        <rect key="frame" x="37" y="22" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="UAn-TI-Go7"/>
+                            <constraint firstAttribute="width" secondItem="biN-07-9Nm" secondAttribute="height" multiplier="1:1" id="g2n-Xx-oSh"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                <real key="value" value="11"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="3sQ-2A-Mm1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="4ZM-JV-iHt"/>
+                <constraint firstItem="nIl-lF-BwD" firstAttribute="leading" secondItem="3sQ-2A-Mm1" secondAttribute="trailing" constant="8" id="h30-1o-Uy0"/>
+                <constraint firstItem="biN-07-9Nm" firstAttribute="centerY" secondItem="3sQ-2A-Mm1" secondAttribute="top" constant="7" id="iV5-J2-mW3"/>
+                <constraint firstItem="nIl-lF-BwD" firstAttribute="centerY" secondItem="3sQ-2A-Mm1" secondAttribute="centerY" id="jm9-PY-B2d"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nIl-lF-BwD" secondAttribute="trailing" constant="10" id="k3C-xB-Ng0"/>
+                <constraint firstItem="3sQ-2A-Mm1" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="na2-c0-DWL"/>
+                <constraint firstItem="biN-07-9Nm" firstAttribute="centerX" secondItem="3sQ-2A-Mm1" secondAttribute="trailing" constant="-5" id="rKy-Ji-Q2N"/>
+            </constraints>
+            <size key="customSize" width="374" height="100"/>
+            <connections>
+                <outlet property="lblName" destination="nIl-lF-BwD" id="ScO-J3-R9D"/>
+                <outlet property="personIcon" destination="3sQ-2A-Mm1" id="M4o-bq-l8B"/>
+                <outlet property="socialIcon" destination="biN-07-9Nm" id="INo-IJ-ycB"/>
+            </connections>
+            <point key="canvasLocation" x="221.53846153846152" y="18.48341232227488"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="YoutubeIcon" width="120" height="120"/>
+        <image name="YoutubePerson" width="133.33332824707031" height="133.33332824707031"/>
+    </resources>
+</document>
