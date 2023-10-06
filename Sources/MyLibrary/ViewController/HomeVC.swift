@@ -45,6 +45,7 @@ public class HomeVC: UIViewController {
                        SocialModel(name: "@mathewmicheli", personIcon: UIImage(named: "Twitterperson", in: .myPackage, with: nil)!, socialIcon: UIImage(named: "TwitterIcon", in: .myPackage, with: nil)!)]
         
         SocialCV.register(UINib(nibName: "SocialCell", bundle: .myPackage), forCellWithReuseIdentifier: "SocialCell")
+        print("This line is changed")
     }
     
     @IBAction func btnSelectOption(_ sender: UIButton)
