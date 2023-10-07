@@ -315,7 +315,7 @@
         <!--ContentVC-->
         <scene sceneID="Wdh-Ds-TMQ">
             <objects>
-                <viewController storyboardIdentifier="ContentVC" id="32G-fq-Dun" customClass="ContentVC" customModule="AnalyticsPackage" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContentVC" id="32G-fq-Dun" customClass="ContentVC" customModule="MyLibrary" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QKX-D7-BrR">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="591"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -611,6 +611,9 @@
                             <constraint firstItem="y29-fV-9zo" firstAttribute="height" secondItem="IAh-10-jzT" secondAttribute="height" multiplier="0.45" constant="1" id="zFo-HS-2o9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imgPoster" destination="8ud-fi-MP2" id="gQY-6D-LnH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SK8-MW-J0t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
